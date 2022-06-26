@@ -1,0 +1,35 @@
+
+
+use patil;
+
+create table item(
+itemno int primary key,
+itemname varchar(15),
+price int,
+category varchar(15)
+);
+
+insert into item values
+(1,'eraser',20,'A'),
+(2,'notebook',40,'B'),
+(3,'pen',50,'C'),
+(4,'scale',60,'D');
+
+select * from item;
+
+use patil;
+
+create table resource(
+id int primary key, 
+resourcename varchar(15),
+status boolean
+);
+
+insert into resource values
+(1,'paper',false),
+(2,'student',true),
+(3,'teacher',false),
+(4,'news',true);
+
+select * from resource;
+
